@@ -1,0 +1,24 @@
+.place__paragraph {
+  margin: 0 0 26px 0;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.63;
+}
+  
+.place__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+  
+@media screen and (max-width: 1023px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63; /*нужно ли повторять свойство, если оно такое же, как в основном селекторе? 
+    прописала, т.к. изменился размер шрифта*/
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place__paragraph {
+    padding: 0 16px;
+  }
+}

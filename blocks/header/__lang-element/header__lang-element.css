@@ -1,0 +1,8 @@
+.header__lang-element {
+    margin-right: 18px;
+  }
+  
+  .header__lang-element:last-of-type { /*создала дополнительную "обертку" с этим классом, 
+    т.к. last-of-type в селекторе .header__lang-link не срабатывал*/
+    margin-right: 0;
+  }
