@@ -17,10 +17,10 @@
 * Реализация функционала смены языка
 * Добавление новых блоков
 
-## Ссылка на проект:
+## Ссылка на проект
 [Github Pages](https://mashafromrasha.github.io/russian-travel/)
 
-## Чеклист:
+## Чеклист
 [Чеклист проектной работы](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-3.pdf)
 
 ## Демо
