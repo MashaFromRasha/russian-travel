@@ -2,17 +2,14 @@
   background-image: url(../../../images/cover__background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  min-height: 740px;
   width: 100%;
   text-decoration: none;
 }
-
-/* как делать эффект затемнения. стандарные рекомендации через position relative и absolute и псевдоклассы
-https://coderistu.ru/2020/08/02/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-css-%d0%b7%d0%b0%d1%82%d0%b5%d0%bc%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d1%84%d0%be%d0%bd%d0%b0/
-https://qna.habr.com/q/412491 */  
 
 .cover__link:before {
   content: '';
@@ -25,8 +22,26 @@ https://qna.habr.com/q/412491 */
   opacity: .3;
   transition: opacity .5s ease;
 }
-  
+
 .cover__link:hover::before {
   background: #2A2C2F;
   opacity: .8;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__link {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .cover__link {
+    min-height: 200px;
+  }
 }
